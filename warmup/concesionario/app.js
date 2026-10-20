@@ -14,4 +14,4 @@ coche.extras[2] = "solar panel";
 let priceFinal = coche.priceBase*1.21;
 coche.status = "used";
 let isExpensive = priceFinal > 50000;
-let isPreowned = cohe.km <= 10000;
+let isPreowned = coche.km <= 10000;
