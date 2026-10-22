@@ -27,15 +27,36 @@ const nombrarMascota = (text) => "Mascota: " + text
 console.log (nombrarMascota("Simba"))
 
 
-
 /*  4. Aplicar descuento especial (Varias líneas de código)
 function calcularDescuento(precio, esSocio) {
   if (esSocio) {
     return precio * 0.8; // 20% de descuento
   } else {
     return precio;
-  }
-}
-*/
+  }}*/
 
 const calcularDescuento = (precio, esSocio) => esSocio ? precio * 0.8 : precio;
+
+
+
+function salute () {
+    console.log 
+}
+
+/* function proccessUser (name,extraAction) {
+    console.log (`Procesando al usuario $`)
+    extraAction() --> callback
+} */
+
+function notificateUser () {
+    console.log ("Tu archivo ya ha sido descargado")
+}
+function downloadFile (name,extraAction) {
+    console.log (`Iniciando la descarga de: ${downloadFile}....`)
+    setTimeout (function(){
+        console.log (`Descarga de ${name} completada`)
+    },3000)
+    console.log ("----empieza la descarga")
+    downloadFile("Cholo", notificateUser)
+
+}
